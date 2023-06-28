@@ -1,0 +1,800 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Condensed:wght@700&family=Roboto:wght@300;400;500;600;700&display=swap');
+
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+
+section {
+  margin: 0 auto;
+  width: 400px;
+  
+  transform: translateY(40%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 20px;
+  box-shadow: 0px 0 31px 0px rgb(0 0 0 / 10%);
+}
+
+
+
+.login-form {
+  width: 70%;
+  margin-bottom: 15px;
+}
+
+
+input {
+  
+  font-size:1.1rem;
+  font-weight: 300;
+  padding: 7px 0;
+  border: none;
+  background-color: inherit;
+}
+
+.username-input, .password-input {
+  width: 90%;
+  border-bottom: 1px solid #a4a4a4;
+}
+
+i {
+  width: 10%;
+  color: rgba(0,0,0,0.3);
+  padding-right: 7px;
+}
+
+.login-form>p {
+  width: 90%;
+  font-size: 1.1rem;
+  text-align: right;
+  margin-top: 5px;
+  font-weight: 300;
+}
+
+.login-btn {
+  border: none;
+  padding: 7px 20px;
+  width: 50%;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background-image: linear-gradient(43deg, hsla(340,100%,76%,1) 0%, hsla(269,100%,77%,1) 100%);
+  color: white;
+  font-weight: 600;
+}
+
+.alternative-signup {
+  width: 70%;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.alternative-signup>p {
+  width: 90%;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: hsl(269deg 26% 47%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Figtree', sans-serif;
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.search-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+button.search-button::before {
+  content: '\f002';
+  font-family: FontAwesome;
+  font-size: 18px;
+  color: #333;
+  margin-right: 5px;
+}
+
+/* Add the Font Awesome library if you haven't already */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+button.post-button {
+  background-color: #afb1b4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: px;
+}
+
+button.post-button i {
+  margin-right: 5px;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  text-align: end;
+  padding-bottom: 60px;
+  
+  
+}
+
+.profile h3 {
+  text-align: end;
+  line-height: 1;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.profile p {
+  line-height: 1;
+  font-size: 14px;
+  opacity: .6;
+}
+
+.profile .img-box {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile .img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* menu (the right one) */
+
+.menu {
+  position: absolute;
+  top: calc(100% + 24px);
+  right: 16px;
+  width: 200px;
+  min-height: 100px;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  transition: 300ms;
+}
+
+.menu::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 14px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.menu.active {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+/* menu links */
+
+.menu ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  background: #fff;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li:hover {
+  background: #eee;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  gap: 6px;
+}
+
+.menu ul li a i {
+  font-size: 1.2em;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Ubuntu', sans-serif;
+}
+
+*, ::before ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(216, 212, 212);
+  box-shadow: 0px 5px 15px 8px #e4e7fb;
+  padding: 10px;
+}
+
+.post {
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+}
+
+.post__username {
+  margin: 5px 0 20px 0;
+}
+
+.post__body {
+  margin: 10px 0;
+}
+
+.post__date {
+  color: grey;
+}
+
+label {
+  display:block;
+}
+
+textarea {
+  display: block;
+  margin: 10px 0;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+body{
+  padding-top: 100px;
+  box-shadow: 0px 5px 15px 8px #e4e7fb;
+  height: auto;
+  font-family: Arial, Helvetica,sans-serif;
+  background-color: #f4f7fe;
+  min-height: 100vh;
+  background: #3A1C71;
+  background: linear-gradient(45deg, #3A1C71, #D76D77, #FFAF7B);
+
+}
+* {
+  font-size: 63, 5%;
+  margin: 0;
+  box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+}
+
+.posts-section
+{
+  height: auto;
+  box-shadow: 0px 5px 15px 8px #e4e7fb;
+ 
+  font-family: Arial, Helvetica,sans-serif;
+  
+  background-color: #bfc4ce;
+  color: #070707;
+}
+
+
+.upload-label {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.upload-label i {
+  margin-right: 5px;
+}
+
+.image-input {
+  display: none;
+}
+
+
+main {
+
+  display: flex;
+  height: 370px;
+ 
+  justify-content: center;
+  
+  
+}
+
+#card1,
+#card2,
+#card3 {
+  height: 18rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 5px 15px 8px #e4e7fb;
+  box-shadow: 0px 5px 15px 8px #e4e7fb;
+}
+
+#card1 {
+  width: 17rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  right: 2rem;
+  bottom: 2rem;
+}
+
+#card2 {
+  width: 23rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#card3 {
+  width: 30rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profileInfo {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 5rem;
+}
+
+.profileInfo:hover {
+  animation: bounce;
+  animation-duration: 2s;
+}
+
+#card1 .profile-text {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  cursor: default;
+}
+
+h1 {
+  color: #0a0d1e;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+h2 {
+  color: #6c7072;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+
+
+h4 {
+  color: #6c7072;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+h4 strong {
+    font-size: 0.95rem; 
+}
+
+.following {
+  height: 2rem;
+  width: 6rem;
+  font-size: 0.8rem;
+  background-color: #ffffff;
+  color: #6c7072;
+  border: 0.1rem solid #e8e9ed;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+.follow {
+  height: 2rem;
+  width: 6rem;
+  font-size: 0.8rem;
+  background-color: #10162e;
+  color: #ffffff;
+  border: 0.1rem solid #e8e9ed;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 685px) {
+  * {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 580px) {
+  * {
+    font-size: 75%;
+  }
+  main {
+    width: 30rem;
+  }
+  #card1 {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  * {
+    font-size: 63%;
+  }
+}
+.logout-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #cc0000;
+}
+
+.logout-button:active {
+  background-color: #990000;
+}
+
+.grats-button {
+    display: inline-block;
+    padding: 8px 13px;
+    background-color: #00ff40;
+    color: #070707;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .grats-button:hover {
+    background-color: #f8027d;
+  }
+  
+  .grats-button:active {
+    background-color: #e400be;
+  }
+  .undograts-button {
+    display: inline-block;
+    padding: 8px 13px;
+    background-color: #ff00b3;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .undograts-button:hover {
+    background-color: #cc0070;
+  }
+  
+  .undograts-button:active {
+    background-color: #ee0000;
+  }
+  
+/* Friend Request Button */
+.friend-request-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Unfriend Button */
+.unfriend-button {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Friend Request Sent Button */
+.friend-request-sent {
+  background-color: #ffc107;
+  color: #000;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+ 
+}
+.friends {
+  background-color: #00ce2d;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  
+ 
+}
+.folder-icon {
+  display: inline-block;
+}
+
+.folder-icon::before {
+  content: "\f07b"; /* Font Awesome folder icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+
+/* Button Hover Effect */
+.friend-request-button:hover
+{
+  background-color: #ffc107;
+  color: #000;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 10px;
+}
+.unfriend-button:hover,
+
+
+.navbar {
+    background-color: rgb(178, 177, 179);
+    display: flex;
+    padding-left: 70px;
+    align-items: center;
+    line-height: 5rem;
+}
+
+.left h1 {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.left h2 {
+  color: #070707;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.gallery-picture {
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-picture:hover {
+  transform: scale(1.05);
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item {
+  flex: 1 0 25%; /* Adjust this value to change the number of items per row */
+  max-width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-item {
+    flex-basis: 100%;
+  }
+}
+
+.post_picture
+{
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+  padding-left: 18%;
+  
+}
+.posts-table{
+  -webkit-text-fill-color: #070707;
+  margin: auto;
+  padding: 6%;
+}
+
+.checkBtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.checkBtn {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    color: #ed1e79;
+    line-height: 80px;
+}
+
+.right ul {
+    display: flex;
+    list-style: none;
+}
+
+.right ul li a {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.right ul li a:hover {
+    background-color: #fff;
+    border-radius: 7px;
+    color: rgb(22, 7, 36);
+}
+
+@media screen and (max-width:805px) {
+    .list {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(22, 7, 36);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 4rem;
+        left: 100%;
+        transition: all 1s;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkBtn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+
+}
+.heart {
+  width: 100px;
+  height: 100px;
+  border-color: transparent;
+  background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  transition: background-position 1s steps(28);
+  transition-duration: 0s;
+}
+.heart.is-active {
+  transition-duration: 1s;
+  background-position: -2800px 0;
+}
+.undoheart {
+  width: 100px;
+  height: 100px;
+  border-color: transparent;
+  background: url("/background/heart.PNG") no-repeat;
+background-position: center;
+
+}
+
+
